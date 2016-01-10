@@ -884,7 +884,9 @@
   content: "\f102";
 }
 .fa-angle-double-down:before {
-  content: "\f103";
+  webkit-animation: scroll-arrow 2s infinite;
+  -moz-animation: scroll-arrow 2s infinite;
+  animation: scroll-arrow 2s infinite;
 }
 .fa-angle-left:before {
   content: "\f104";
