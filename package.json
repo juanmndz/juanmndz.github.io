@@ -2,7 +2,7 @@
   "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://juanmndz.github.io",
+  "homepage": "https://juanmndz.github.io/",
   "dependencies": {
     "material-ui": "^0.19.1",
     "prop-types": "^15.5.10",
@@ -17,12 +17,13 @@
     "react-typist": "^1.1.1",
     "styled-components": "^2.1.2"
   },
-  "scripts": {
+"scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "deploy": "npm run build&&gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "eslint": "^4.6.1",
