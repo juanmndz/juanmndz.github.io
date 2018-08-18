@@ -42,7 +42,7 @@ export default [
     mobile_image: '',
     title: 'React Portfolio',
     date: '2017',
-    github_url: 'https://github.com/juanmndz/juanmndz.github.io',
+    github_url: 'https://github.com/juanmndz/juanmndz.github.io/tree/develop',
     project_url: 'https://juanmndz.github.io/',
     text: 'Built this portfolio using React and Material UI',
     tech: ['React', 'Material-UI']

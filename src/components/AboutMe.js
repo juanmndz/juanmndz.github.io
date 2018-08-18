@@ -16,14 +16,10 @@ const AboutMe = () => (
 
   <Card style={{ backgroundColor: 'none', boxShadow: 'none' }}>
     <CardTitle
-      title="About Me"
+      title="Resume"
       titleColor="white"
       subtitleColor="white"
     />
-    <CardMedia>
-      <img className="Project__img" src="http://i.imgur.com/vOFA28O.jpg" alt="About me" />
-    </CardMedia>
-    <CardText className="Project__text">I am web developer with fanscinating ambitoin with learning web technology.</CardText>
     <CardActions>
       <RaisedButton
         href="https://juanmndz.github.io/JuanMendezResume.pdf"
@@ -33,6 +29,7 @@ const AboutMe = () => (
         icon={<LiveDemo />}
       />
     </CardActions>
+    <CardText className="Project__text">I am web developer with fanscinating ambitoin with learning web technology.</CardText>
   </Card>
   </div>
   </div>
