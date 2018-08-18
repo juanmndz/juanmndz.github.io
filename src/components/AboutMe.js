@@ -26,7 +26,7 @@ const AboutMe = () => (
     <CardText className="Project__text">I am web developer with fanscinating ambitoin with learning web technology.</CardText>
     <CardActions>
       <RaisedButton
-        href="http://juanmndz.github.io/JuanMendezResume.pdf"
+        href="https://juanmndz.github.io/JuanMendezResume.pdf"
         target="_blank"
         label="Resume"
         primary

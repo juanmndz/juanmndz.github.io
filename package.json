@@ -17,7 +17,7 @@
     "react-typist": "^1.1.1",
     "styled-components": "^2.1.2"
   },
-"scripts": {
+  "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
