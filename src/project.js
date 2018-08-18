@@ -6,7 +6,7 @@ export default [
     title: 'Veggzies - Vegetable Shop React Website',
     date: '2018',
     github_url: 'https://github.com/juanmndz/Vegetable-Shop',
-    project_url: 'https://juanmndz.github.io/Vegetable-Shop/',
+    project_url: 'http://vegetable-shop.surge.sh/',
     text:
       'Veggzies is a mock vegetable shopping website built with React and Reactstrap',
     role: 'Developer',
@@ -18,8 +18,8 @@ export default [
     mobile_image: '',
     title: 'MERN Shopping List',
     date: '2017',
-    github_url: 'https://github.com/juanmndz/TodoMVC-Redux-Tutorial',
-    project_url: 'http://todomvcredux.surge.sh/',
+    github_url: 'https://github.com/juanmndz/MERN-Shopping-List',
+    project_url: 'https://mern-shop-list-demo.herokuapp.com/',
     text:
       'A simple shopping list that uses Mongo, React, Express, and Node to create item list can be saved dynamically on the server.',
     role: 'Full Stack Developer',
