@@ -1,5 +1,17 @@
 export default [
   {
+    img: 'https://i.imgur.com/d3FxmWe.gif',
+    mobile_image: '',
+    title: 'Story-Driven RPG Game - ReactJS, Redux, Redux-Saga',
+    date: '2018',
+    github_url: '',
+    project_url: 'https://gotg.netlify.com/',
+    text:
+      'Managed huge ecosystem of module containers and components to create an RPG System with battle, load/save, and story functionality. Use Redux DevTools to see data structure and overall functionality',
+    role: 'Developer',
+    tech: ['React', 'Redux']
+  },
+  {
     img:
       'https://camo.githubusercontent.com/c32b44397c31420eab6b2ed9237d21537fec5d34/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646e6932796d3379712f696d6167652f75706c6f61642f76313533343430333039302f766567677a6965732e676966',
     mobile_image: '',

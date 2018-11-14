@@ -4,7 +4,7 @@ import {
   CardActions,
   CardMedia,
   CardTitle,
-  CardText,
+  CardText
 } from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
 import LiveDemo from 'material-ui/svg-icons/hardware/desktop-windows';
@@ -20,25 +20,22 @@ const StyledGithubButton = styled(GithubButton)`
 
 const Project = ({ text, img, title, github_url, project_url, date }) => (
   <Card style={{ backgroundColor: 'none', boxShadow: 'none' }}>
-    <CardTitle
-      title={title}
-      titleColor="white"
-      subtitleColor="white"
-    />
+    <CardTitle title={title} titleColor="white" subtitleColor="white" />
 
-    {/* <CardTitle title={title} titleColor='white' subtitleColor='white' subtitle={<TechImgs imgs={tech}/>} /> */}
     <CardMedia>
       <img className="Project__img" src={img} role="presentation" />
     </CardMedia>
     <CardText className="Project__text">{text}</CardText>
     <CardActions>
-      <RaisedButton
-        href={github_url}
-        target="_blank"
-        label="CODE"
-        secondary
-        icon={<StyledGithubButton />}
-      />
+      {github_url && (
+        <RaisedButton
+          href={github_url}
+          target="_blank"
+          label="CODE"
+          secondary
+          icon={<StyledGithubButton />}
+        />
+      )}
       <RaisedButton
         href={project_url}
         target="_blank"
@@ -56,7 +53,7 @@ Project.propTypes = {
   title: PropTypes.string.isRequired,
   github_url: PropTypes.string.isRequired,
   project_url: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired
 };
 
 export default Project;
