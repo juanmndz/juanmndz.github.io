@@ -1,16 +1,16 @@
 import { Box, Flex, Text, Image, Stack, HStack } from '@chakra-ui/react';
 import React from 'react';
-import projects from '../projectData';
+import experience from '../experienceData';
 
 function Projects() {
   return (
-    <Box as="section" mb="20" px="5" id="Projects">
+    <Box as="section" mb="20" px="5" id="Experience">
       <Box as="header" fontSize="2xl" fontWeight="600" pt="8">
-        <h2>Projects</h2>
+        <h2>Experience</h2>
       </Box>
 
       <Stack direction={['column']} spacing="24" my="7">
-        {projects.map((project, index) => (
+        {experience.map((exp, index) => (
           <Flex
             key={index}
             flexWrap="wrap"
@@ -21,8 +21,8 @@ function Projects() {
                 borderRadius=".5rem"
                 boxShadow="lg"
                 w={['100%']}
-                src={project.image}
-                alt="Project"
+                src={exp.image}
+                alt="Experience"
               />
             </Box>
 
@@ -37,19 +37,18 @@ function Projects() {
               <Text
                 fontSize="2xl"
                 casing="uppercase"
-                color="tomato"
+                color="skyblue"
                 fontWeight="600"
               >
-                {project.title}
+                {exp.title}
               </Text>
-              <p>{project.description}</p>
+              <p>{exp.description}</p>
 
               <Flex pb="2" flexWrap="wrap">
-                {project.tools.map((disc, index) => (
+                {exp.tools.map((disc, index) => (
                   <Box
                     as="span"
                     border="1px"
-                    color="border-color: rgba(31, 41, 55)"
                     borderRadius=".5rem"
                     px="2"
                     py="1"
@@ -63,16 +62,7 @@ function Projects() {
                 ))}
               </Flex>
               <HStack spacing="4">
-                <a href={project.github} target="_blank" rel="noreferrer">
-                  <img
-                    src="./images/icons/github.svg"
-                    color="#fff"
-                    alt="link to github page"
-                    width="24px"
-                    height="24px"
-                  />
-                </a>
-                <a href={project.link} target="_blank" rel="noreferrer">
+                <a href={exp.link} target="_blank" rel="noreferrer">
                   <img
                     src="./images/icons/external-link.svg"
                     alt="link to live"

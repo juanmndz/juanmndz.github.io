@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-
 import App from './App';
-
-import './index.css';
-
-injectTapEventPlugin();
+import reportWebVitals from './reportWebVitals';
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <MuiThemeProvider>
+  <StrictMode>
     <App />
-  </MuiThemeProvider>,
-  document.getElementById('root'),
+  </StrictMode>,
+  document.getElementById('root')
 );
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://cra.link/PWA
+serviceWorker.unregister();
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
